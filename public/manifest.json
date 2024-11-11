@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "usePopcorn",
+  "name": "Movies app built with React.js that utilizes OMDb API",
   "icons": [
     {
       "src": "favicon.ico",
