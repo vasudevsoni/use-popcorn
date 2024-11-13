@@ -1,70 +1,106 @@
-# Getting Started with Create React App
+<h1>🎬 Use-Popcorn</h1>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p><strong>Use-Popcorn</strong> is a React.js web application that allows users to search for movies and view detailed information about each movie using the OMDb API. Users can also add movies to a personalized watchlist, making it easy to keep track of films they want to watch.</p>
 
-## Available Scripts
+<h2>🌐 Live Demo</h2>
 
-In the project directory, you can run:
+<p>A live version of Use-Popcorn can be found <a href="https://vasudevsoni.github.io/use-popcorn/">here</a>.</p>
 
-### `npm start`
+<h2>📚 Table of Contents</h2>
+<ul>
+  <li><a href="#features">Features</a></li>
+  <li><a href="#installation">Installation</a></li>
+  <li><a href="#usage">Usage</a></li>
+  <li><a href="#api-reference">API Reference</a></li>
+  <li><a href="#contributing">Contributing</a></li>
+</ul>
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+<h2 id="features">✨ Features</h2>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+<ul>
+  <li><strong>Movie Search:</strong> Search for any movie by title and view a list of results.</li>
+  <li><strong>Movie Details:</strong> Click on a movie to see details such as the title, year, genre, rating, director, cast, and plot summary.</li>
+  <li><strong>Add to Watchlist:</strong> Save movies to a watchlist to keep track of what you want to watch later.</li>
+  <li><strong>Responsive Design:</strong> Optimized for both desktop and mobile devices.</li>
+</ul>
 
-### `npm test`
+<h2 id="installation">⚙️ Installation</h2>
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+<ol>
+  <li><strong>Clone the repository:</strong>
+    <pre><code>git clone https://github.com/vasudevsoni/use-popcorn.git
+cd use-popcorn
+    </code></pre>
+  </li>
+  <li><strong>Install dependencies:</strong>
+    <pre><code>npm install</code></pre>
+  </li>
+  <li><strong>Get an API key:</strong>
+    <ul>
+      <li>Sign up at <a href="https://www.omdbapi.com/apikey.aspx">OMDb API</a> to obtain an API key.</li>
+      <li>Add this key to an <code>.env</code> file in the root of your project:
+        <pre><code>REACT_APP_OMDB_API_KEY=your_api_key_here</code></pre>
+      </li>
+    </ul>
+  </li>
+  <li><strong>Start the development server:</strong>
+    <pre><code>npm start</code></pre>
+  </li>
+  <li><strong>Build for production:</strong>
+    <pre><code>npm run build</code></pre>
+  </li>
+</ol>
 
-### `npm run build`
+<h2 id="usage">🚀 Usage</h2>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<ol>
+  <li><strong>Search for a Movie:</strong>
+    <ul>
+      <li>Use the search bar to look up movies by title.</li>
+    </ul>
+  </li>
+  <li><strong>View Movie Details:</strong>
+    <ul>
+      <li>Click on a movie from the search results to see detailed information.</li>
+    </ul>
+  </li>
+  <li><strong>Add to Watchlist:</strong>
+    <ul>
+      <li>Click the "Add to Watchlist" button on a movie's details page to save it to your watchlist.</li>
+    </ul>
+  </li>
+  <li><strong>View and Manage Watchlist:</strong>
+    <ul>
+      <li>Access your watchlist from the navigation bar, where you can view or remove movies.</li>
+    </ul>
+  </li>
+</ol>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<h2 id="api-reference">📡 API Reference</h2>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<p>This project utilizes the <a href="http://www.omdbapi.com/">OMDb API</a> for fetching movie data.</p>
 
-### `npm run eject`
+<ul>
+  <li><strong>Base URL:</strong> <code>https://www.omdbapi.com/</code></li>
+  <li><strong>Parameters:</strong>
+    <ul>
+      <li><code>apikey</code> (required): Your API key</li>
+      <li><code>s</code> (optional): Movie title to search</li>
+      <li><code>i</code> (optional): IMDb ID to get detailed movie data</li>
+    </ul>
+  </li>
+</ul>
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+<p>Example request:</p>
+<pre><code>GET https://www.omdbapi.com/?apikey=your_api_key&s=inception</code></pre>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<h2 id="contributing">🤝 Contributing</h2>
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<p>Contributions are welcome! To contribute:</p>
+<ol>
+  <li>Fork the project.</li>
+  <li>Create a new branch (<code>git checkout -b feature/your-feature</code>).</li>
+  <li>Make your changes.</li>
+  <li>Commit and push your changes (<code>git commit -m 'Add some feature'</code>).</li>
+  <li>Open a pull request.</li>
+</ol>
